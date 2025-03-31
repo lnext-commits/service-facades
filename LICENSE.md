@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright (c) Barry vd. Heuvel <barryvdh@gmail.com>
+Copyright (c) Skorilkin Aleksey <own@lnext.space>
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
