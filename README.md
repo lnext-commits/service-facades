@@ -12,7 +12,7 @@ Additional traits come with the package.
 - trait the response array that is used in our salvatory: [doc-salvatory.md](https://github.com/lnext-commits/service-facades/blob/main/doc-salvatory.md)
 
 
-### _You can install additional traits separately.._
+### _You can install additional traits separately_
 
 
 - _CheckRelation_
