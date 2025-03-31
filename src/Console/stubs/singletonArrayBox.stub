@@ -58,6 +58,31 @@ class DummyClass
     }
 
     /**
+     * @param  string  $key
+     * @param  string|array  $search
+     * @param  bool  $precise
+     * @return bool
+     */
+    public function existValue(string $key, string|array $search, bool $precise = false): bool
+    {
+        $data = $this->data[$key] ?? false;
+        if ($data) {
+            $data = array_flip($data);
+            if (is_array($search)) {
+                $positive = $negative = 0;
+                foreach ($search as $k) {
+                    isset($data[$k]) ? $positive++ : $negative++;
+                }
+                return $precise ? $positive && !$negative : (bool) $positive;
+            } else {
+                return isset($data[$search]);
+            }
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * @param  string|array  $required_key
      * @return array|bool
      */
@@ -101,6 +126,8 @@ class DummyClass
         }
     }
 
+
+    //--------- private function ---------------------------
     private function setData($key, $value): void
     {
         $this->data[$key] = $value;
