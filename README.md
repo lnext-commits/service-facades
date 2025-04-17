@@ -15,16 +15,16 @@ Additional traits come with the package.
 ### _You can install additional traits separately_
 
 
-- _CheckRelation_
-```sh
-composer require lnext/check-relation
-```
-
 - _EndlessOptions_
 ```sh
 composer require lnext/endless-options
 ```
 
 
-- trait for expanding laravel resources:  [doc-check-relation.md](https://github.com/lnext-commits/check-relation/blob/main/doc-check-relation.md)
+- _CheckRelation_
+```sh
+composer require lnext/auxiliary-solutions
+```
+
 - trait for extending laravel models: [doc-endless-options.md](https://github.com/lnext-commits/endless-options/blob/main/doc-endless-options.md)
+- trait for expanding laravel resources:  [doc-check-relation.md](https://github.com/lnext-commits/auxiliary-solutions/blob/main/doc-check-relation.md)
