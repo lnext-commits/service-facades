@@ -6,16 +6,11 @@ use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 use Lnext\ServiceFacades\Console\Maker\extendFacade;
 use Lnext\ServiceFacades\Console\Maker\Facade;
-use Lnext\ServiceFacades\Console\Maker\FacadeSingleton;
 use Lnext\ServiceFacades\Console\Maker\Get;
 use Lnext\ServiceFacades\Console\Maker\ImplementFacade;
-use Lnext\ServiceFacades\Console\Maker\OwnSeeder;
 use Lnext\ServiceFacades\Console\Maker\ResponseArray;
 use Lnext\ServiceFacades\Console\Maker\Salvatory;
-use Lnext\ServiceFacades\Console\Maker\SingletonArrayBoxClass;
-use Lnext\ServiceFacades\Console\Maker\SingletonClass;
 use Lnext\ServiceFacades\Console\MakeServiceFacade;
-use Lnext\ServiceFacades\Console\Singleton;
 use Lnext\ServiceFacades\Console\Maker\Act;
 
 class ServiceFacadesProvider extends ServiceProvider implements DeferrableProvider
@@ -40,18 +35,13 @@ class ServiceFacadesProvider extends ServiceProvider implements DeferrableProvid
         $this->commands(
             [
                 MakeServiceFacade::class,
-                Singleton::class,
                 Act::class,
                 ExtendFacade::class,
                 Facade::class,
-                FacadeSingleton::class,
                 Get::class,
                 ImplementFacade::class,
-                OwnSeeder::class,
                 ResponseArray::class,
                 Salvatory::class,
-                SingletonArrayBoxClass::class,
-                SingletonClass::class,
             ]
         );
     }
@@ -65,18 +55,13 @@ class ServiceFacadesProvider extends ServiceProvider implements DeferrableProvid
     {
         return [
             MakeServiceFacade::class,
-            Singleton::class,
             Act::class,
             ExtendFacade::class,
             Facade::class,
-            FacadeSingleton::class,
             Get::class,
             ImplementFacade::class,
-            OwnSeeder::class,
             ResponseArray::class,
             Salvatory::class,
-            SingletonArrayBoxClass::class,
-            SingletonClass::class,
         ];
     }
 }
